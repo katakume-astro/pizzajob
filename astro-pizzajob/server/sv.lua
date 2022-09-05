@@ -1,9 +1,5 @@
---print(('esx_policejob: %s attempted to confiscate!'):format(sourceXPlayer.identifier))
---local sourceXPlayer = ESX.GetPlayerFromId(source)
-AddEventHandler('onResourceStart', function(GetCurrentResourceName())
-    print('Skrypt zostal wystartowany :D')
-    lib.versionCheck('katakume-bixbi/pizzajob')
-end)
+print('Skrypt zostal wystartowany :D')
+lib.versionCheck('katakume-bixbi/pizzajob')
 
 RegisterNetEvent('cheater')
 AddEventHandler('cheater', function()
@@ -51,7 +47,6 @@ AddEventHandler('ser', function()
             print(reason)
             -- for example if all slots are taken it will give us "inventory_full"
         end
-         
     end)
 end)
 
@@ -80,7 +75,6 @@ AddEventHandler('ciasto', function()
             print(reason)
             -- for example if all slots are taken it will give us "inventory_full"
         end
-                    
     end)
 end)
 
@@ -109,7 +103,6 @@ AddEventHandler('sos', function()
             print(reason)
             -- for example if all slots are taken it will give us "inventory_full"
         end
-                    
     end)
 end)
 

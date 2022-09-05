@@ -5,6 +5,12 @@ AddEventHandler('onResourceStart', function(GetCurrentResourceName())
     lib.versionCheck('katakume-bixbi/pizzajob')
 end)
 
+RegisterNetEvent('cheater')
+AddEventHandler('cheater', function()
+	local xPlayer = ESX.GetPlayerFromId(source)
+	print(('pizzajob: %s ma cheaty (nie ma joba pizzeri)'):format(xPlayer.identifier))
+end)
+
 RegisterNetEvent('dopizza')
 AddEventHandler('dopizza', function()
     xPlayer = ESX.GetPlayerFromId(source)

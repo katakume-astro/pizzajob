@@ -1,5 +1,6 @@
 --print(('esx_policejob: %s attempted to confiscate!'):format(sourceXPlayer.identifier))
 --local sourceXPlayer = ESX.GetPlayerFromId(source)
+lib.versionCheck('katakume-bixbi/pizzajob')
 RegisterNetEvent('dopizza')
 AddEventHandler('dopizza', function()
     xPlayer = ESX.GetPlayerFromId(source)

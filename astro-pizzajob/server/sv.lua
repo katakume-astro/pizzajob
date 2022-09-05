@@ -28,8 +28,6 @@ end)
 
 RegisterNetEvent('ser')
 AddEventHandler('ser', function()
-    local xPlayer = ESX.GetPlayerFromId(source)
-	if xPlayer.job.name == 'pizza' then
     local ox_inventory = exports.ox_inventory
     ox_inventory:AddItem(source, 'ser', 1, nil, nil, function(success, reason)
         if success then
@@ -59,8 +57,6 @@ end)
 
 RegisterNetEvent('ciasto')
 AddEventHandler('ciasto', function()
-    local xPlayer = ESX.GetPlayerFromId(source)
-	if xPlayer.job.name == 'pizza' then
     local ox_inventory = exports.ox_inventory
     ox_inventory:AddItem(source, 'ciasto', 1, nil, nil, function(success, reason)
         if success then
@@ -90,8 +86,6 @@ end)
 
 RegisterNetEvent('sos')
 AddEventHandler('sos', function()
-    local xPlayer = ESX.GetPlayerFromId(source)
-	if xPlayer.job.name == 'pizza' then
     local ox_inventory = exports.ox_inventory
     ox_inventory:AddItem(source, 'sos', 1, nil, nil, function(success, reason)
         if success then

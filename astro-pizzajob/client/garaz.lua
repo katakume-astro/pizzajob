@@ -41,18 +41,21 @@ AddEventHandler('astro:menupojazdow2', function()
 end)
 
 RegisterNetEvent('astro:schowajpojazd2', function()
+    if ESX.PlayerData.job and ESX.PlayerData.job.name == 'pizza' then
     ESX.ShowNotification('Wejdz do pojazdu nastepnie odczekaj 10 sekund!')
     Citizen.Wait(10000)
     ESX.ShowNotification('Usunieto pojazd')
     local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
     SetEntityAsMissionEntity(vehicle, true, true)
     DeleteVehicle(vehicle)
+            end
 end)
 -- -494.8499, -255.4472, 35.6140, 291.7604
 RegisterNetEvent('astro:pojazd2', function()
+if ESX.PlayerData.job and ESX.PlayerData.job.name == 'pizza' then
 ESX.ShowNotification('Zrespiono pojazd')
 ESX.Game.SpawnVehicle('faggio', vector3(-1332.6946, -1091.9341, 6.9776), 214.4182, function(vehicle) end)
---ESX.Game.SpawnVehicle('xls2', vector3(-445.7364, -2790.1455, 6.0004), 44.1362, function(vehicle)
+            end
 end)
 
 CreateThread(function()

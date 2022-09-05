@@ -1,6 +1,10 @@
 --print(('esx_policejob: %s attempted to confiscate!'):format(sourceXPlayer.identifier))
 --local sourceXPlayer = ESX.GetPlayerFromId(source)
-lib.versionCheck('katakume-bixbi/pizzajob')
+AddEventHandler('onResourceStart', function(GetCurrentResourceName())
+    print('Skrypt zostal wystartowany :D')
+    lib.versionCheck('katakume-bixbi/mazebankheist')
+end)
+
 RegisterNetEvent('dopizza')
 AddEventHandler('dopizza', function()
     xPlayer = ESX.GetPlayerFromId(source)

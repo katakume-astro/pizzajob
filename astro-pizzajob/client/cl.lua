@@ -1,6 +1,8 @@
 RegisterNetEvent('pizza:schowek', function()
 if ESX.PlayerData.job and ESX.PlayerData.job.name == 'pizza' then
     exports.ox_inventory:openInventory('stash', 'society_pizza')
+			            else
+            TriggerServerEvent('cheater')
 end
 end)
 
@@ -139,6 +141,8 @@ end
     RegisterNetEvent('ser2', function()
         if ESX.PlayerData.job and ESX.PlayerData.job.name == 'pizza' then
             TriggerServerEvent('ser')
+			            else
+            TriggerServerEvent('cheater')
                 end
     end)
 
@@ -151,6 +155,8 @@ end
            RegisterNetEvent('sos2', function()
             if ESX.PlayerData.job and ESX.PlayerData.job.name == 'pizza' then
                 TriggerServerEvent('sos')
+			            else
+            TriggerServerEvent('cheater')
                     end
              end)
 
@@ -164,6 +170,8 @@ end
                     canCancel = false})
                     FreezeEntityPosition(PlayerPedId(), false)
                     chuj()
+			            else
+            TriggerServerEvent('cheater')
 			end
                  end)
 
@@ -207,6 +215,8 @@ end
                         canCancel = false})
                         FreezeEntityPosition(PlayerPedId(), false)
                         TriggerServerEvent('takcheaterzetotriggernakaseserio')
+			            else
+            TriggerServerEvent('cheater')
                         end
                  end)
 

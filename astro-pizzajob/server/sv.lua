@@ -4,7 +4,6 @@ lib.versionCheck('katakume-bixbi/pizzajob')
 RegisterNetEvent('dopizza')
 AddEventHandler('dopizza', function()
     xPlayer = ESX.GetPlayerFromId(source)
-    local sourceXPlayer = ESX.GetPlayerFromId(source)
     if xPlayer.getInventoryItem('ser').count > 1 and xPlayer.getInventoryItem('ciasto').count > 0 and xPlayer.getInventoryItem('sos').count > 0 then
         xPlayer.removeInventoryItem("ser", 3)
         xPlayer.removeInventoryItem("ciasto", 1)
@@ -12,7 +11,7 @@ AddEventHandler('dopizza', function()
         xPlayer.addInventoryItem("pizza", 1)
         print('test')
     else
-        sourceXPlayer.showNotification('Nie masz wystarczajaco przedmiotow')
+        xPlayer.showNotification('Nie masz wystarczajaco przedmiotow')
 end
 end)
 

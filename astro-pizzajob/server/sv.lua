@@ -51,7 +51,7 @@ AddEventHandler('ser', function()
             print(reason)
             -- for example if all slots are taken it will give us "inventory_full"
         end
-                    end
+         
     end)
 end)
 
@@ -80,7 +80,7 @@ AddEventHandler('ciasto', function()
             print(reason)
             -- for example if all slots are taken it will give us "inventory_full"
         end
-                    end
+                    
     end)
 end)
 
@@ -109,7 +109,7 @@ AddEventHandler('sos', function()
             print(reason)
             -- for example if all slots are taken it will give us "inventory_full"
         end
-                    end
+                    
     end)
 end)
 

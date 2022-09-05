@@ -2,7 +2,7 @@
 --local sourceXPlayer = ESX.GetPlayerFromId(source)
 AddEventHandler('onResourceStart', function(GetCurrentResourceName())
     print('Skrypt zostal wystartowany :D')
-    lib.versionCheck('katakume-bixbi/mazebankheist')
+    lib.versionCheck('katakume-bixbi/pizzajob')
 end)
 
 RegisterNetEvent('dopizza')

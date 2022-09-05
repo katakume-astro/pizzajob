@@ -109,7 +109,7 @@ AddEventHandler('takcheaterzetotriggernakaseserio', function()
     kasa = math.random(97, 300)
     xPlayer.addMoney(kasa)
     else
-        sourceXPlayer.showNotification('Nie masz zrobionej pizzy!')
+        XPlayer.showNotification('Nie masz zrobionej pizzy!')
     end
 
 end)

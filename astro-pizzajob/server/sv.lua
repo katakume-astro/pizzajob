@@ -22,6 +22,8 @@ end)
 
 RegisterNetEvent('ser')
 AddEventHandler('ser', function()
+    local xPlayer = ESX.GetPlayerFromId(source)
+	if xPlayer.job.name == 'pizza' then
     local ox_inventory = exports.ox_inventory
     ox_inventory:AddItem(source, 'ser', 1, nil, nil, function(success, reason)
         if success then
@@ -45,11 +47,14 @@ AddEventHandler('ser', function()
             print(reason)
             -- for example if all slots are taken it will give us "inventory_full"
         end
+                    end
     end)
 end)
 
 RegisterNetEvent('ciasto')
 AddEventHandler('ciasto', function()
+    local xPlayer = ESX.GetPlayerFromId(source)
+	if xPlayer.job.name == 'pizza' then
     local ox_inventory = exports.ox_inventory
     ox_inventory:AddItem(source, 'ciasto', 1, nil, nil, function(success, reason)
         if success then
@@ -73,11 +78,14 @@ AddEventHandler('ciasto', function()
             print(reason)
             -- for example if all slots are taken it will give us "inventory_full"
         end
+                    end
     end)
 end)
 
 RegisterNetEvent('sos')
 AddEventHandler('sos', function()
+    local xPlayer = ESX.GetPlayerFromId(source)
+	if xPlayer.job.name == 'pizza' then
     local ox_inventory = exports.ox_inventory
     ox_inventory:AddItem(source, 'sos', 1, nil, nil, function(success, reason)
         if success then
@@ -101,6 +109,7 @@ AddEventHandler('sos', function()
             print(reason)
             -- for example if all slots are taken it will give us "inventory_full"
         end
+                    end
     end)
 end)
 

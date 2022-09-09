@@ -155,6 +155,7 @@ end
              end)
 
              RegisterNetEvent('cipa', function()
+		if ESX.PlayerData.job and ESX.PlayerData.job.name == 'pizza' then
                 FreezeEntityPosition(PlayerPedId(), true) 
                 lib.progressBar({
                     duration = 10000,
@@ -163,6 +164,7 @@ end
                     canCancel = false})
                     FreezeEntityPosition(PlayerPedId(), false)
                     chuj()
+			end
                  end)
 
              --[[OSTATNIA RZECZ CZYLI SKLADANIE PIZZUNI TEGO TYPU]]--

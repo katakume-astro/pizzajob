@@ -1,5 +1,5 @@
 print('Skrypt zostal wystartowany :D')
-lib.versionCheck('katakume-bixbi/pizzajob')
+lib.versionCheck('katakume-astro/pizzajob')
 
 RegisterNetEvent('dopizza')
 AddEventHandler('dopizza', function()

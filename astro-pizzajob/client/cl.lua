@@ -1,22 +1,9 @@
 RegisterNetEvent('pizza:schowek', function()
 if ESX.PlayerData.job and ESX.PlayerData.job.name == 'pizza' then
     exports.ox_inventory:openInventory('stash', 'society_pizza')
+	else TriggerServerEvent('astro:cheater')
 end
 end)
-
-
-RegisterNetEvent('esx:playerLoaded')
-AddEventHandler('esx:playerLoaded', function(xPlayer)
-	ESX.PlayerData = xPlayer
-	ESX.PlayerLoaded = true
-end)
-
-RegisterNetEvent('esx:onPlayerLogout')
-AddEventHandler('esx:onPlayerLogout', function()
-	ESX.PlayerLoaded = false
-	ESX.PlayerData = {}
-end)
-
 
 RegisterNetEvent('astro:contextpizza')
 AddEventHandler('astro:contextpizza', function()
@@ -139,18 +126,21 @@ end
     RegisterNetEvent('ser2', function()
         if ESX.PlayerData.job and ESX.PlayerData.job.name == 'pizza' then
             TriggerServerEvent('ser')
+			else TriggerServerEvent('astro:cheater')
                 end
     end)
 
         RegisterNetEvent('ciasto2', function()
             if ESX.PlayerData.job and ESX.PlayerData.job.name == 'pizza' then
                 TriggerServerEvent('ciasto')
+			else TriggerServerEvent('astro:cheater')
                     end
         end)
 
            RegisterNetEvent('sos2', function()
             if ESX.PlayerData.job and ESX.PlayerData.job.name == 'pizza' then
                 TriggerServerEvent('sos')
+			else TriggerServerEvent('astro:cheater')
                     end
              end)
 
@@ -164,6 +154,7 @@ end
                     canCancel = false})
                     FreezeEntityPosition(PlayerPedId(), false)
                     chuj()
+			else TriggerServerEvent('astro:cheater')
 			end
                  end)
 
@@ -207,6 +198,7 @@ end
                         canCancel = false})
                         FreezeEntityPosition(PlayerPedId(), false)
                         TriggerServerEvent('takcheaterzetotriggernakaseserio')
+			else TriggerServerEvent('astro:cheater')
                         end
                  end)
 

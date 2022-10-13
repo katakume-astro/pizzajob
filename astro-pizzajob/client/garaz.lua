@@ -40,9 +40,9 @@ end)
 
 RegisterNetEvent('astro:schowajpojazd2', function()
     if ESX.PlayerData.job and ESX.PlayerData.job.name == 'pizza' then
-    ESX.ShowNotification('Wejdz do pojazdu nastepnie odczekaj 10 sekund!')
+    exports['Astro-NotifySystem']:Notify('successful', 'Wejdz do pojazdu nastepnie odczekaj 10 sekund!')
     Citizen.Wait(10000)
-    ESX.ShowNotification('Usunieto pojazd')
+    exports['Astro-NotifySystem']:Notify('successful', 'Usunieto pojazd!')
     local vehicle = GetVehiclePedIsIn(PlayerPedId(), false)
     SetEntityAsMissionEntity(vehicle, true, true)
     DeleteVehicle(vehicle)

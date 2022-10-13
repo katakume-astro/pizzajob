@@ -11,7 +11,7 @@ AddEventHandler('dopizza', function()
         xPlayer.addInventoryItem("pizza", 1)
         print('test')
     else
-        xPlayer.showNotification('Nie masz wystarczajaco przedmiotow')
+        TriggerClientEvent('Astro-NotifySystem:Notify', source, 'error', 'Nie masz wystarczajaco przedmiotow!')
 end
 end)
 
@@ -108,7 +108,7 @@ AddEventHandler('takcheaterzetotriggernakaseserio', function()
     kasa = math.random(97, 300)
     xPlayer.addMoney(kasa)
     else
-        xPlayer.showNotification('Nie masz zrobionej pizzy!')
+        TriggerClientEvent('Astro-NotifySystem:Notify', source, 'error', 'Nie masz zrobionej pizzy!')
     end
 
 end)

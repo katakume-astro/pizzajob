@@ -23,3 +23,10 @@ shared_scripts {
     '@ox_lib/init.lua',
     '@es_extended/imports.lua'
 }
+
+dependencies {
+    'oxmysql',
+    'Astro-NotifySystem',
+    'ox_lib',
+    'es_extended'
+}
